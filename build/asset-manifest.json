@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.72f14a26.css",
+    "main.js": "/static/js/main.03b9143f.js",
+    "static/media/Santorini.jpg": "/static/media/Santorini.c8b162e64046d51f596b.jpg",
+    "static/media/login-1.svg": "/static/media/login-1.ee4cf843da248eb3f09f5c5ad99ea948.svg",
+    "static/media/lost-2.svg": "/static/media/lost-2.497b15c65bb1d799d44b95a0e9f5713d.svg",
+    "static/media/developer_outline I.svg": "/static/media/developer_outline I.bb63ce7e0b3feba8ebc7c7f00dd7ffc6.svg",
+    "static/media/feature.svg": "/static/media/feature.ddfd0c4348a4e6a2451ae33607aa6231.svg",
+    "static/media/list-item.svg": "/static/media/list-item.dea87b5b73e0d92d7484e65fc1bbe5ea.svg",
+    "static/media/notification.svg": "/static/media/notification.a56d4eccbbf1f666d955a5ed6d981355.svg",
+    "static/media/instagram.svg": "/static/media/instagram.e9e78fbbf84082ad5119aea55bd95a70.svg",
+    "index.html": "/index.html",
+    "static/media/github.svg": "/static/media/github.9c7f761c8c514ba19016b0ce1eeefa60.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.9a244755d6c0b6ecaa098d1ea461312e.svg",
+    "static/media/mail.svg": "/static/media/mail.38f97cbba53cad8a77ba39a744cca967.svg",
+    "main.72f14a26.css.map": "/static/css/main.72f14a26.css.map",
+    "main.03b9143f.js.map": "/static/js/main.03b9143f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72f14a26.css",
+    "static/js/main.03b9143f.js"
+  ]
+}
