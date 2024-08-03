@@ -112,7 +112,7 @@ function ItemPage(props) {
   useEffect(() => {
     const { location } = props;
     Axios({
-      url: `https://lfs-backend.herokuapp.com/item/${item_id}`,
+      url: `https://lost-backend-3lwz.onrender.com/item/${item_id}`,
       method: "GET",
     })
       .then((response) => {
@@ -127,11 +127,6 @@ function ItemPage(props) {
             setalreadyAnswered(true);
             console.log(alreadyAnswered);
           }
-          // console.log(
-          //   "User ID is :",
-          //   JSON.parse(localStorage.getItem("user"))._id
-          // );
-          // console.log("Given by :", ans.givenBy);
         });
         setitemid(data._id);
         setitemname(data.name);
@@ -338,7 +333,7 @@ function ItemPage(props) {
   const submitResponse = () => {
     // console.log(e.target.value)
     Axios({
-      url: `https://lfs-backend.herokuapp.com/confirmResponse/${messageId}`,
+      url: `https://lost-backend-3lwz.onrender.com/confirmResponse/${messageId}`,
       method: "POST",
       data: { response: response },
     })
@@ -359,7 +354,7 @@ function ItemPage(props) {
   const delete_item = () => {
     console.log("deleted");
     Axios({
-      url: "https://lfs-backend.herokuapp.com/deleteitem",
+      url: "https://lost-backend-3lwz.onrender.com/deleteitem",
       method: "POST",
       data: { item_id },
     })
@@ -398,7 +393,7 @@ function ItemPage(props) {
       });
     }
     Axios({
-      url: "https://lfs-backend.herokuapp.com/edititem",
+      url: "https://lost-backend-3lwz.onrender.com/edititem",
       method: "POST",
       data: info,
     })
@@ -416,31 +411,13 @@ function ItemPage(props) {
       });
     setShow(false);
   };
-  // const show_number = () => {
-  //   console.log("Number Shown");
-  //   const { location } = props;
-  //   Axios({
-  //     url: `/getnumber/${
-  //       location.search.substring(1).split("=")[1].split("&")[0]
-  //     }`,
-  //     method: "GET",
-  //   })
-  //     .then((response) => {
-  //       console.log(response.data.Number);
-  //       setPhoneNumber(response.data.Number);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  //   // handleCloseNumber()
-  // };
   const show_question = () => {
     // console.log("Number Shown");
     setshowQuestion(true);
   };
   const submitAnswer = () => {
     Axios({
-      url: "https://lfs-backend.herokuapp.com/submitAnswer",
+      url: "https://lost-backend-3lwz.onrender.com/submitAnswer",
       method: "POST",
       data: {
         itemId: item_id,
@@ -465,22 +442,6 @@ function ItemPage(props) {
       });
     setAnswer("");
   };
-  // {
-  //   itemimage.map((item) => {
-  //     console.log(item);
-  //   });
-  // }
-  // const test=Object.values(itemimage)
-  // console.log(test[0])
-  // const people = [];
-  // const [test,setTest]=useState("")
-  // for (let i = 0; i < 10; i++) {
-  //   people.push({
-  //     name: "Aloo",
-  //     country: "India",
-  //   });
-  // }
-  // setTest(people)
   return (
     <>
       <Navbar />

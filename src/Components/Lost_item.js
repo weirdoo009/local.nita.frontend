@@ -19,17 +19,6 @@ function LostItem() {
   const handleShow = () => setShow(true);
   const handleClose = () => {
     setloading(true);
-    // const form = new FormData();
-    // form.append("name", itemname);
-    // form.append("description", description);
-    // form.append('itemPictures',itemname)
-    // const payload = {
-    //   name: itemname,
-    //   description: description,
-    //   type:type,
-    //   itemPictures: itemimage,
-    // };
-    // console.log(payload)
     if (itemname && description && type) {
       // console.log("Item image : ", itemimage);
       const info = new FormData();
@@ -182,7 +171,7 @@ function LostItem() {
             Close
           </Button>
           {/* onClick={handleClose} */}
-          <Button variant="primary" onClick={temporaryShut}>
+          <Button variant="primary" onClick={handleClose}>
             {loading ? (
               <>
                 <Spinner

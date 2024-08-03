@@ -88,27 +88,10 @@ export default function Feed() {
             created_date.getHours() +
             ":" +
             created_date.getMinutes();
-
-          // var sec = created_date.getSeconds();
-
-          // category.postitem.findOne({createdBy: item.createdBy}).populate('name')
-          // .exec(function (err, story) {
-          //   if (err) return err
-          //   console.log('The author is %s', story);
-          //   // prints "The author is Ian Fleming"
-          // });
-          // console.log(item.itemPictures[0].img)
-
-          // let user = false;
-          // if (item.createdBy === user_info._id) {
-          //   user = true;
-          // }
-          // console.log("Lost item "+user+item.name)
           items.push(
             <a href={`/${item.name}?cid=${item._id}&type=${item.type}/true`}>
               <Col key={item.name} style={{ marginTop: "2%" }} md={3}>
-                {/* <li key={item.name}>{item.name}</li>
-                <li key={item.description}>{item.description}</li> */}
+                {}
                 <Card bsPrefix="item-card" style={{ maxHeight: "465px" }}>
                   <Card.Img
                     variant="top"
@@ -140,19 +123,9 @@ export default function Feed() {
                     )}
                     <Card.Text>Type : {item.type}</Card.Text>
                     <Card.Text>Created at : {createdAt}</Card.Text>
-                    {/* <Card.Text>
-                      Created by :{item.createdBy}
-                    </Card.Text> */}
+                    {}
                   </Card.Body>
-                  {/* <ListGroup className="list-group-flush">
-                    <ListGroupItem>Cras justo odio</ListGroupItem>
-                    <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                    <ListGroupItem>Vestibulum at eros</ListGroupItem>
-                  </ListGroup>
-                  <Card.Body>
-                    <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>
-                  </Card.Body> */}
+                  {}
                 </Card>
               </Col>
             </a>

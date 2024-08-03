@@ -9,23 +9,6 @@ import { ToastProvider } from "react-toast-notifications";
 // import Login from './Login'
 function Navbar() {
   const token = window.localStorage.getItem("token");
-  // console.log(props)
-  // console.log("Status :", LOGGED_IN)
-  // useEffect(()=>{
-  //   axios({
-  //     url:'checktoken',
-  //     method:"POST",
-  //     headers:{
-  //       Authorization: token ? `Bearer ${token}` : "",
-  //     },
-  //   })
-  //   .then((res)=>{
-  //     console.log(res)
-  //   })
-  //   .catch((err)=>{
-  //     console.log("400 : ",err)
-  //   })
-  // },[])
   const signout = () => {
     // constraint.LOGGED_IN = false;
     setConstraint(false);
@@ -108,36 +91,7 @@ function Navbar() {
             >
               Sign-out
             </a>
-            {/* <div>
-              <img src={profile_icon} alt="profile-icon" />
-              <ul>
-                <li>
-                  <a
-                    style={{ textDecoration: "none", color: "white" }}
-                    href="/mylistings"
-                  >
-                    My Listings
-                  </a>
-                </li>
-                <li>
-                  <a
-                    style={{ textDecoration: "none", color: "white" }}
-                    href="/responses"
-                  >
-                    Responses
-                  </a>
-                </li>
-                <li>
-                  <a
-                    style={{ textDecoration: "none", color: "white" }}
-                    onClick={signout}
-                    href="/log-in"
-                  >
-                    Log-out
-                  </a>
-                </li>
-              </ul>
-            </div> */}
+            {}
           </ul>
         </div>
       </div>

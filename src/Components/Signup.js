@@ -10,23 +10,6 @@ export default class Signup extends Component {
       info: "",
     };
   }
-  // state={
-  //     username:'',
-  //     pass:'',
-  //     cpass:''
-  // }
-  // handleChange=(event)=>{
-  //     const target= event.target
-  //     const name=event.name
-  //     const value=event.value
-
-  //     console.log("Event is :"+event)
-  //     console.log("Event.target = "+target+"Event.name = "+name+"Event.value =  "+value)
-
-  //     this.setState({
-  //         [name]:value
-  //     })
-  // }
   submit = () => {
     this.setState({
       info: "",
@@ -54,19 +37,8 @@ export default class Signup extends Component {
         });
         // console.log("Data has been sent")
         if (response.data === "Done") {
-          this.props.history.push("/log-in");
+          this.props.history.push("/feed");
         }
-        // console.log(document.getElementById('password').value)
-        // console.log(document.getElementById('cpassword').value)
-        // if(document.getElementById('password').value==document.getElementById('cpassword').value){
-        //     console.log('Client : Password did matched')
-        //     // this.props.history.push('/log-in')
-        // }
-        // else{
-        //     document.getElementById('message').innerHTML='pass did not match'
-        //     console.log('Client : Password did not matched')
-        // }
-        // return <Redirect to='/log-in'/>
       })
       .catch(() => {
         console.log("Error occured");
@@ -150,87 +122,13 @@ export default class Signup extends Component {
             </button>
             <p style={{ color: "white" }}>
               Have an account?{" "}
-              <a style={{ color: "black" }} href="/log-in">
+              <a style={{ color: "cyan" }} href="/log-in">
                 Click here
               </a>
             </p>
           </form>
         </div>
-        {/* <div className='Box-1'>
-        <form>
-          <h3>Sign Up</h3>
-          <p style={{color:'white'}}>{this.state.info}</p>
-          <div className="row1">
-          <div className="form-group">
-            <label>First name</label>
-            <input
-              type="text"
-              id="firstname"
-              className="form-control"
-              placeholder="First name"
-              required 
-              onChange={(e)=>{this.setState({firstname:e.target.value})}}
-            />
-          </div>
-
-          <div style={{marginLeft:"2%"}} className="form-group">
-            <label>Last name</label>
-            <input
-              id="lastname"
-              type="text"
-              className="form-control"
-              placeholder="Last name"
-              required 
-              onChange={(e)=>{this.setState({lastname:e.target.value})}}
-            />
-          </div>
-          </div>
-
-          <div className="form-group">
-            <label>Email address</label>
-            <input
-                id="email"
-              type="email"
-              className="form-control"
-              placeholder="Enter email"
-              required 
-              onChange={(e)=>{this.setState({email:e.target.value})}}
-            />
-          </div>
-
-          <div className="row1">
-          <div className="form-group">
-            <label>Password</label>
-            <input
-              id="password"
-              type="password"
-              className="form-control"
-              placeholder="Enter password"
-              required 
-              onChange={(e)=>{this.setState({password:e.target.value})}}
-            />
-          </div>
-          <div style={{marginLeft:"2%"}} className="form-group">
-            <label>Confirm Password</label>
-            <input
-              id="cpassword"
-              type="password"
-              className="form-control"
-              placeholder="Confirm password"
-              required 
-              onChange={(e)=>{this.setState({cpassword:e.target.value})}}
-            />
-          </div>
-          </div>
-
-          <button onClick={this.submit} type="submit" className="btn btn-primary btn-block">
-            Sign Up
-          </button>
-          <p className="forgot-password text-right">
-            Already registered <a href='/log-in'>login in?</a>
-          </p>
-        </form>
-        </div> */}
+        {}
       </>
     );
   }

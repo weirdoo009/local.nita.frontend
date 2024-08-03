@@ -23,13 +23,6 @@ export default function Home() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  // const postitem = () => {
-  //   if (localStorage.getItem("user") !== null) {
-  //     console.log("User already logged in !");
-  //   } else {
-  //     console.log("Not logged in");
-  //   }
-  // };
   const ref = useRef();
   AOS.init();
 
@@ -111,15 +104,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* <div className="post-item">
-          <button class="button" onClick={postitem}>Post Item</button>
-        </div>         */}
       </div>
-      {/* <div className="project-inspiration">
-        <h6>My Project Inspiration</h6>
-        <p>Landy comes with multi-lingual support, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in developing web applications using React.js.</p>
-      </div> */}
       <div data-aos="fade-right">
         <Container fluid className="total-inspiration">
           <div>
@@ -148,24 +133,6 @@ export default function Home() {
           </Row>
         </Container>
       </div>
-      {/* <div data-aos="fade-left">
-        <Container fluid>
-          <div className="feature">
-            <div>
-              <h6 className="section-heading">What makes this Unique?</h6>
-              <div>
-                <p>
-                  Personal informartion are is something which should be taken
-                  utmost care and should be shared only to the right user.
-                </p>
-              </div>
-            </div>
-            <div>
-              <img className="feature-img" src={feature} alt="" />
-            </div>
-          </div>
-        </Container>
-      </div> */}
       <div data-aos="fade-left">
         <Container fluid>
           <div className="total-about">
@@ -181,7 +148,7 @@ export default function Home() {
                 />
                 <h4>Create an account</h4>
                 <p>Initially, you have to create an account to get started.</p>
-                <a href="/log-in">
+                <a href="/sign-up">
                   <Button variant="custom" size="lg">
                     Sign Up
                   </Button>
@@ -310,26 +277,11 @@ export default function Home() {
             <span className="symbol">/&#62;</span>
           </h4>
           <h6>Full Stack Developer</h6>
-          {/* <a
-            href="https://www.swarupwho.codes"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h6>swarupwho.codes</h6>
-          </a> */}
         </div>
         <h5 style={{ textAlign: "center" }}>
           Copyright © 2024 wEirdoo. All rights reserved.
         </h5>
       </div>
-      {/*<div className="About">
-        <div>
-          <h1>About the project</h1>
-          <p>
-            This project was made to help the students of NIT Agartala either find their lost item or post about any item which they found in the campus.
-          </p>
-        </div>
-        </div> */}
     </>
   );
 }

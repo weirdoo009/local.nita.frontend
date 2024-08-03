@@ -46,32 +46,7 @@ function Login() {
         console.log(error);
         console.log("Error occured");
       });
-    // .then((response)=>{
-    //     console.log('Login Data sent')
-    //     this.setState({
-    //         info:response.data
-    //     })
-    //     // this.props.history.push('/feed')
-    // })
-    // .catch(()=>{
-    //     console.log('Error occured')
-    // })
   }
-
-  // login = () => {
-
-  //     axios({
-  //       method: "POST",
-  //       data: {
-  //         username: document.getElementById('username').value,
-  //         password: document.getElementById('password').value,
-  //       },
-  //       withCredentials: true,
-  //       url: " https://lost-backend-3lwz.onrender.com/login",
-  //     })
-  //     .then((res) => console.log(res))
-  //     .catch((err)=>console.log(err));
-  //   };
 
   return (
     <>
@@ -118,7 +93,7 @@ function Login() {
           </button>
           <p style={{ color: "white" }}>
             Don't have an account?{" "}
-            <a style={{ color: "black" }} href="/sign-up">
+            <a style={{ color: "cyan" }} href="/sign-up">
               Click here
             </a>
           </p>

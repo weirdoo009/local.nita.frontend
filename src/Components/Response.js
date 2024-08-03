@@ -31,7 +31,7 @@ function Response() {
   const temp = [];
   useEffect(() => {
     Axios({
-      url: `https://lfs-backend.herokuapp.com/myresponses/${
+      url: `https://lost-backend-3lwz.onrender.com/myresponses/${
         JSON.parse(localStorage.getItem("user"))._id
       }`,
       method: "GET",
@@ -71,10 +71,6 @@ function Response() {
                 <span className="attributes">Time :</span> {date}
               </h5>
               {response.response === "Moderation" ? (
-                // <p style={{ color: "orange" }}>
-                //   Please wait, it's in moderation. We will get back to you once
-                //   response recieved from the owner
-                // </p>
                 <h6>
                   <h6>
                     <Badge pill variant="primary">
