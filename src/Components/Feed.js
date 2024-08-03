@@ -65,7 +65,6 @@ export default function Feed() {
                 href={`/${item.name}?cid=${item._id}&type=${item.type}/${user}`}
               >
                 <Col key={item.name} style={{ marginTop: "2%" }} md={3}>
-                  {dw}
                   <Card bsPrefix="item-card">
                     <Card.Img
                       variant="top"
